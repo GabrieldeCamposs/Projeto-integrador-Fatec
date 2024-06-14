@@ -27,8 +27,9 @@ function selecionarNumeros()
 
     
 
-Para a geracção do pdf foi ultilizada a biblioteca\
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>\
+Para a geração do pdf foi ultilizada a biblioteca:
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+\
 function gerarPDF(numeros, vaga, data, hora) {
 
     const { jsPDF } = window.jspdf;
