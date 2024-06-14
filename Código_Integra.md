@@ -1,11 +1,15 @@
 Neste lugar deixarei oo codigo na integra que ouve minha participação direta/
-Parte 1: escolha e aleatorização dos pcd;
-//aleatorio pcd
-function selecionarNumeros() {
+Parte 1: escolha e aleatorização dos pcd:
+
+//funcao escolha dos pcd\
+function selecionarNumeros() 
+{
+
     var input = document.getElementById("vagas").value;
     if(input==''){
         var numeros=-1;
     }
+    
     else{
     numeros = input.split(",").map(function(item) {
     return parseInt(item.trim());
@@ -20,10 +24,11 @@ function selecionarNumeros() {
         }
     }
     }
-
-Parte 2: Geração de pdf utilizando JS:
+    
+//funcao para gerar pdf;
 
 function gerarPDF(numeros, vaga, data, hora) {
+
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     // Adiciona um título dentro de uma caixa e o centraliza
@@ -38,6 +43,7 @@ function gerarPDF(numeros, vaga, data, hora) {
     doc.text(title, titleX, 18);
     doc.setFontSize(12);
     doc.text(title2, titleX2, 18);
+
 
     // Adiciona a legenda fora da caixa
     const legendTitle = "Legenda:";
