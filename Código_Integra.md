@@ -1,4 +1,4 @@
-Neste lugar deixarei o codigo na integra em que ouve minha participação direta/
+Neste lugar deixarei o codigo na integra em que ouve minha participação direta\
 Parte 1: escolha e aleatorização dos pcd:
 
 //funcao escolha dos pcd\
